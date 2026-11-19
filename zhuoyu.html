@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>琢玉 · Zhuoyu — robotdoglee</title>
+<meta name="description" content="琢玉：本地优先的论文复现学习工作台。把一篇论文拆成可上手的复现卡片，七步主线亲手做一遍。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo serif" href="./">robotdoglee<span class="dot">.</span></a>
+    <nav class="main">
+      <a href="./#works">作品</a>
+      <a href="./#more">更多</a>
+      <a href="./#about">关于</a>
+      <a href="https://github.com/robotdoglee">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <article class="page">
+    <p class="backlink"><a href="./">← 回到首页</a></p>
+    <div class="kicker" style="margin-top:22px;">作品 · 论文复现</div>
+    <h1 class="serif">琢玉</h1>
+    <p class="sub">问渠回答「前人做过吗」，琢玉回答「我怎么亲手做一遍」。它是问渠的姊妹篇：查清现状之后，把那篇最值得学的论文，真正做出来。</p>
+    <div class="links" style="margin-top:18px;">
+      <a class="primary" href="https://37km306o1q81r6izvma.traesite.cn">在线体验</a>
+      <a href="https://github.com/robotdoglee/zhuoyu-showcase/blob/main/demo-video.mp4">演示视频</a>
+      <a href="https://github.com/robotdoglee/zhuoyu-showcase">展示仓库</a>
+    </div>
+    <div class="tags" style="margin-top:14px;"><span>TRAE 参赛作品</span><span>上海交通大学</span><span>本地优先 · 无后端</span></div>
+
+    <figure>
+      <img src="assets/zhuoyu-home.png" alt="琢玉首页与内置示例">
+      <figcaption>首页：内置 Attention 与 ResNet 两个完整示例，一键载入即可体验全流程</figcaption>
+    </figure>
+
+    <h2 class="serif">它解决什么问题</h2>
+    <p>读论文和复现论文之间隔着一条沟：论文写的是结论，复现要的是步骤。琢玉把一篇论文拆成可动手的结构——每个关键部件一张卡片，写清它在做什么、依据原文哪一段、公式与关键数字是什么——然后排成一条七步主线，陪你从「看懂」走到「做出来」，再把自己的结果与论文指标逐项对照。</p>
+
+    <h2 class="serif">七步主线</h2>
+    <ul>
+      <li><strong>拆解</strong>：论文被拆成卡片墙，点开任意卡片看详细解释、原文依据、公式与关键数字、关联卡片。</li>
+      <li><strong>知识地图</strong>：部件之间的依赖关系成图，先学什么、后学什么一目了然。</li>
+      <li><strong>复现计划</strong>：按依赖顺序生成可执行的复现步骤清单。</li>
+      <li><strong>记事本</strong>：边做边记，想法、坑和结论都留在项目里。</li>
+      <li><strong>指标对照</strong>：自己的实验结果与论文报告逐项并排，差距在哪里清清楚楚。</li>
+      <li><strong>导出</strong>：整个复现过程可导出留档或分享。</li>
+      <li><strong>技能树</strong>：做完一篇，掌握的技能被点亮，下一篇学什么有了方向。</li>
+    </ul>
+
+    <figure>
+      <img src="assets/zhuoyu-map.png" alt="琢玉知识地图">
+      <figcaption>知识地图：论文部件的依赖关系图</figcaption>
+    </figure>
+
+    <h2 class="serif">本地优先</h2>
+    <p>琢玉没有后端，也不需要账号：全部数据只存在浏览器本地（IndexedDB），关掉网络照样用，论文和笔记不离开你的设备。技术上是 React + Vite + TypeScript 的单页应用。</p>
+
+    <h2 class="serif">开发过程</h2>
+    <p>琢玉在 TRAE 中开发完成，全过程留有完整的里程碑记录、关键步骤截图与任务编号，统一放在展示仓库里：<a href="https://github.com/robotdoglee/zhuoyu-showcase">robotdoglee/zhuoyu-showcase</a>，演示视频也在其中。</p>
+  </article>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 robotdoglee · 上海交通大学</span>
+    <span><a href="https://github.com/robotdoglee">github.com/robotdoglee</a></span>
+  </div>
+</footer>
+</body>
+</html>

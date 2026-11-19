@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robotdoglee · 作品集</title>
+<meta name="description" content="robotdoglee 的个人作品集：问渠（论文对比矩阵）与琢玉（论文复现工作台），以及其他小作品。上海交通大学。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo serif" href="./">robotdoglee<span class="dot">.</span></a>
+    <nav class="main">
+      <a href="#works">作品</a>
+      <a href="#more">更多</a>
+      <a href="#about">关于</a>
+      <a href="https://github.com/robotdoglee">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="kicker">个人作品集 · PORTFOLIO</div>
+    <h1 class="serif">为科研工作流<br>做趁手的工具。</h1>
+    <p class="lede">上海交通大学在读。这里放我做的几个小工具——两个围绕「读论文」这件事：一个帮你查清前人做过什么，一个陪你把论文亲手做一遍。</p>
+  </div>
+
+  <section id="works">
+    <h2 class="sec"><span class="no">其一</span>主要作品</h2>
+
+    <div class="work">
+      <a href="qianren.html"><img class="shot" src="assets/qianren-home.png" alt="问渠首页"></a>
+      <div class="body">
+        <h3 class="serif">问渠<span class="en">QIANREN</span></h3>
+        <p class="tagline">一句话，查清前人做过什么、还空着什么。</p>
+        <p class="desc">输入一个研究想法或问题，并行检索 OpenAlex、Semantic Scholar、Crossref、Europe PMC、DBLP、arXiv 六大学术来源，去重合并后逐篇抽取关键字段，生成「方法 × 年份」全景、论文卡片与研究空白点，可导出 Markdown / CSV / BibTeX。2026 Qoder 高校创造力大赛 StudyHack 学习科研赛道参赛作品。</p>
+        <div class="tags"><span>论文检索</span><span>对比矩阵</span><span>纯静态 + 边缘函数</span><span>免 key 可用</span></div>
+        <div class="links">
+          <a class="primary" href="https://qianren-9o3elwijmv8.qoder.zone">在线体验</a>
+          <a href="qianren.html">详细介绍</a>
+          <a href="https://github.com/robotdoglee/qianren">GitHub 仓库</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <a href="zhuoyu.html"><img class="shot" src="assets/zhuoyu-home.png" alt="琢玉首页"></a>
+      <div class="body">
+        <h3 class="serif">琢玉<span class="en">ZHUOYU</span></h3>
+        <p class="tagline">问渠回答「前人做过吗」，琢玉回答「我怎么亲手做一遍」。</p>
+        <p class="desc">本地优先的论文复现学习工作台：把一篇论文拆成可上手的复现卡片，顺着「拆解 → 知识地图 → 复现计划 → 记事本 → 指标对照 → 导出 → 技能树」七步主线，一步步把论文做出来。数据只留在浏览器本地，无后端、无账号。TRAE 参赛作品。</p>
+        <div class="tags"><span>论文复现</span><span>本地优先</span><span>React + IndexedDB</span><span>无后端</span></div>
+        <div class="links">
+          <a class="primary" href="https://37km306o1q81r6izvma.traesite.cn">在线体验</a>
+          <a href="zhuoyu.html">详细介绍</a>
+          <a href="https://github.com/robotdoglee/zhuoyu-showcase">展示仓库</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="more">
+    <h2 class="sec"><span class="no">其二</span>更多作品</h2>
+    <div class="mini-grid">
+      <div class="mini">
+        <h3 class="serif">Solmaris</h3>
+        <p>一座虚构的阳光港口城市：俯视角开放世界小游戏——开车、步行、交通与行人、通缉与警察追捕、三章任务线，全部用原生 JavaScript 写成，零依赖。make.fun「Make GTA 6」赏金赛参赛作品。</p>
+        <div class="links"><a href="https://github.com/robotdoglee/doris-gta6">GitHub 仓库</a></div>
+      </div>
+      <div class="mini">
+        <h3 class="serif">Doris Forge</h3>
+        <p>从零实现的 GitHub 兼容代码托管服务：git 智能 HTTP、REST v3、GraphQL 与 MCP 接口，单个 Node 进程、无第三方依赖跑完全部功能。make.fun git forge 赏金赛参赛作品。</p>
+        <div class="links"><a href="https://github.com/robotdoglee/doris-forge">GitHub 仓库</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="sec"><span class="no">其三</span>关于</h2>
+    <p style="color:var(--ink-2);font-size:15.5px;max-width:38em;">我是 robotdoglee，上海交通大学在读。平时折腾 AI 工具和科研工作流，喜欢把重复劳动做成小工具：查文献、复现论文、以及偶尔写点游戏和基础设施练手。作品都在 GitHub 上，欢迎试用和提 issue。</p>
+  </section>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 robotdoglee · 上海交通大学</span>
+    <span><a href="https://github.com/robotdoglee">github.com/robotdoglee</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>问渠 · Qianren — robotdoglee</title>
+<meta name="description" content="问渠：研究想法的论文对比矩阵工具。一句话，并行检索六大学术来源，生成方法×年份全景与研究空白点。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo serif" href="./">robotdoglee<span class="dot">.</span></a>
+    <nav class="main">
+      <a href="./#works">作品</a>
+      <a href="./#more">更多</a>
+      <a href="./#about">关于</a>
+      <a href="https://github.com/robotdoglee">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <article class="page">
+    <p class="backlink"><a href="./">← 回到首页</a></p>
+    <div class="kicker" style="margin-top:22px;">作品 · 论文检索</div>
+    <h1 class="serif">问渠</h1>
+    <p class="sub">不求字字有答，但求一念豁达。——取意朱熹「问渠那得清如许，为有源头活水来」。</p>
+    <div class="links" style="margin-top:18px;">
+      <a class="primary" href="https://qianren-9o3elwijmv8.qoder.zone">在线体验</a>
+      <a href="https://github.com/robotdoglee/qianren">GitHub 仓库</a>
+    </div>
+    <div class="tags" style="margin-top:14px;"><span>2026 Qoder 高校创造力大赛</span><span>StudyHack 学习科研赛道</span><span>上海交通大学 · 个人参赛</span></div>
+
+    <figure>
+      <img src="assets/qianren-home.png" alt="问渠首页：一句话输入研究想法">
+      <figcaption>首页：一句话说出你的研究想法或问题，即可开始检索</figcaption>
+    </figure>
+
+    <h2 class="serif">它解决什么问题</h2>
+    <p>开始一个新课题时，最先要回答的往往是两个问题：这个方向前人做过什么？还有什么没人做？问渠把这件事压缩成一句话：输入一个研究想法或一个具体问题，它并行检索六大开放学术来源，合并去重后逐篇抽取关键字段，最后给出一张能直接看懂的「方法 × 年份」全景图、带「与你想法的关联」的论文卡片、单篇详情、研究空白点与对比表。</p>
+
+    <h2 class="serif">怎么工作</h2>
+    <ul>
+      <li><strong>并行检索</strong>：OpenAlex、Semantic Scholar、Crossref、Europe PMC、DBLP、arXiv 同时查；医学/生物问题自动追加 Europe PMC，计算机/AI 问题自动追加 DBLP。</li>
+      <li><strong>去重合并</strong>：按 DOI、arXiv ID、PMID、规范化标题逐级合并，字段取最长摘要、最大引用数与更权威的出处。</li>
+      <li><strong>逐篇抽取</strong>：只依据标题与摘要抽取 7 个字段，找不到依据的一律写「摘要未提及」，不做补全、不编造。</li>
+      <li><strong>全景与空白点</strong>：方法 × 年份矩阵一眼看清主流路线与拥挤程度，并归纳出尚未被覆盖的研究空白。</li>
+      <li><strong>导出</strong>：结果可导出 Markdown / CSV / BibTeX；有 DOI 时用 Unpaywall 补开放获取全文链接。</li>
+    </ul>
+
+    <figure>
+      <img src="assets/qianren-demo.png" alt="问渠一键演示结果：方法×年份全景">
+      <figcaption>一键演示的结果页：12 篇论文的方法 × 年份全景、检索式与导出入口</figcaption>
+    </figure>
+
+    <h2 class="serif">三种用法</h2>
+    <ul>
+      <li><strong>一键演示</strong>：首页三个预计算的真实检索结果，回放式呈现，零等待先看效果。</li>
+      <li><strong>免 key 实时模式</strong>（默认）：浏览器直连开放 API 真实检索 + 规则抽取，不需要任何凭证。</li>
+      <li><strong>增强模式</strong>：配置大模型后生成带 [P#] / [R#] 引用的综合解答；也可以自带 Scopus、IEEE 等六家服务的个人 key 追加来源——key 只存浏览器本地，只经同源函数转发。</li>
+    </ul>
+    <p>还可以导入自己从知网、谷歌学术、Zotero 导出的文献文件（RIS / BibTeX / EndNote / NoteExpress / RefWorks），与检索结果一起去重、抽取、进全景；导入只在浏览器本地解析，不上传。论文太少时，它还会补充书籍与社区线索（Open Library、GitHub、Hugging Face 等），并明确标注「未经同行评审」。</p>
+
+    <h2 class="serif">技术</h2>
+    <p>纯静态：HTML + CSS + 原生 ES modules，无构建步骤、无外部 CDN；少数不支持跨域的来源经一个同源边缘函数代理。单源失败自动跳过，不影响其余结果。</p>
+  </article>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 robotdoglee · 上海交通大学</span>
+    <span><a href="https://github.com/robotdoglee">github.com/robotdoglee</a></span>
+  </div>
+</footer>
+</body>
+</html>
